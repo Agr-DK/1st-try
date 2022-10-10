@@ -6,67 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cv, resume, резюме, работодатель, сотрудник месяца, сотрудник, работа, IT">
     <meta name="description" content="Сайт-резюме вашего невероятного будущего сотрудника Харченко Д.Д.">
+    <link rel="stylesheet" href="01_style.css">
     <title>Резюме Харченко Д.Д.</title>
 </head>
-<body>
-        <img src="DK.jpg" alt="Харченко" width="150">
-    <h1>Харченко Д.Д.</h1>
-        <p>Решил <em>освоить профессию frontend-разработчика</em>. </p>
-        <p>Думаю что <strong>развитие</strong> человека не должно останавливаться <strong><em>на протяжении всей жизни</em></strong>.</p>
-    <h3>Мои хобби:</h3>
-        <ol>
-            <li>Путешествия</li>
-            <li>Сноубординг</li>
-            <li>Компьютерные игры</li>
-        </ol>
-    <h3>Опыт работы</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Период</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Шахта КВ</td>
-                    <td>Горный мастер</td>
-                    <td>2015-2016</td>
-                </tr>
-                <tr>
-                    <td>Шахта 4-21</td>
-                    <td>Коммерческий директор</td>
-                    <td>2016-2022</td>
-                </tr>
-                <tr>
-                    <td>Самозанятость</td>
-                    <td>Специалист по фасадам</td>
-                    <td>2018-наст.время</td>
-                </tr>
-            </tbody>
-        </table>
-    <h3>Социальные сети:</h3>
-        <a href="https://t.me/Kha_Dim" target="_blank">Telegram</a>
-        |
-        <a href="https://vk.com/kharchenko_d" target="_blank">VK</a>
-    <hr>
-    <h3>Свзаться со мной</h3>
-        <form action="/">
-            <div>
-                <label for="text">Ваше имя:</label>
-                <input type="text" id="text" placeholder="Введите имя">
+<body class="container">
+    <div class="info">
+        <img id="photo" src="DK.jpg" alt="Харченко">
+        <div class="text">
+            <h1>Харченко Д.Д.</h1>
+            <p>Решил освоить профессию frontend-разработчика </p>
+            <p>Думаю что развитие человека не должно останавливаться на протяжении всей жизни.</p>
+            <div class="social">
+                <h3>Социальные сети:</h3>
+                    <a href="https://t.me/Kha_Dim" target="_blank">Telegram</a>
+                    |
+                    <a href="https://vk.com/kharchenko_d" target="_blank">VK</a>
             </div>
-            <div>
-                <label for="email">Ваш email:</label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
-            <div>
-                <label for="message">Ваше сообщение:</label>
-                <br>
-                <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-            </div>
-            <button type="submit">Отправить</button>
-        </form>
+        </div>
+    </div>
+    <div class="card bg-blue" >
+        <h3>Мои хобби:</h3>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Сноубординг</li>
+                <li>Компьютерные игры</li>
+            </ol>
+    </div>
+    <div class="card bg-red">
+        <h3>Опыт работы</h3>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>Шахта КВ</td>
+                        <td>Горный мастер</td>
+                        <td>2015-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Шахта 4-21</td>
+                        <td>Коммерческий директор</td>
+                        <td>2016-2022</td>
+                    </tr>
+                    <tr>
+                        <td>Самозанятость</td>
+                        <td>Специалист по фасадам</td>
+                        <td>2018-наст.время</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+    <footer class="footer">    
+            <form action="/" class="form">
+                <h3>Свзаться со мной</h3>
+                    <div class="form-row">
+                        <div class="form-1">
+                            <label for="text">Ваше имя:</label>
+                            <input type="text" id="text" placeholder="Введите имя">
+                        </div>
+                        <div class="form-1">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email">
+                        </div>
+                    </div>
+                        <div  class="form-1">
+                            <label for="message">Ваше сообщение:</label>
+                            <br>
+                            <textarea name="message" id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить</button>
+            </form>
+    </footer>
     </body>
 </html>
